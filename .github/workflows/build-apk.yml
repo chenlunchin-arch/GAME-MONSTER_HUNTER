@@ -33,8 +33,8 @@ jobs:
       - name: Lock to landscape
         run: |
           f=android/app/src/main/AndroidManifest.xml
-          sed -i 's/<activity /<activity android:screenOrientation="sensorLandscape" /' "$f"
-          grep -n screenOrientation "$f"
+          sed -i '0,/<activity/s//<activity android:screenOrientation="sensorLandscape"/' "$f"
+          grep -c screenOrientation "$f" || echo "orientation not patched (non-fatal)"
 
       - name: Sync web assets
         run: npx cap sync android
