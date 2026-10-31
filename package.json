@@ -1,0 +1,16 @@
+{
+  "name": "yishou-jixing",
+  "version": "1.0.0",
+  "private": true,
+  "description": "異獸紀行：穿越時代的獵人",
+  "scripts": {
+    "sync": "npx cap sync",
+    "android": "npx cap add android && npx cap sync android",
+    "open": "npx cap open android"
+  },
+  "dependencies": {
+    "@capacitor/android": "^6.0.0",
+    "@capacitor/cli": "^6.0.0",
+    "@capacitor/core": "^6.0.0"
+  }
+}

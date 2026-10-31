@@ -1,0 +1,7 @@
+{
+  "appId": "com.example.yishoujixing",
+  "appName": "異獸紀行",
+  "webDir": "www",
+  "backgroundColor": "#0c0a12",
+  "android": { "allowMixedContent": false }
+}
